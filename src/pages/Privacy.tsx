@@ -6,6 +6,7 @@ const LAST_UPDATED = '2026-11-22'
 export default function Privacy() {
   return (
     <div className="privacy-page">
+      <title>FRANORDE - Privacy</title>
       <h2>Privacy</h2>
 
       <article>
