@@ -1,4 +1,4 @@
-import TechText from '../components/TechText'
+import TechText from '../components/reactbits/TechText'
 
 export default function Home() {
   return (
