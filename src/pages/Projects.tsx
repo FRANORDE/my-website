@@ -44,6 +44,7 @@ function ProjectCard({ name, description, repo, assetPattern }: ProjectCardProps
 
   return (
     <article>
+      <title>FRANORDE - Projects</title>
       <h3>{name}</h3>
       <p>{description}</p>
       <div className="project-actions">
