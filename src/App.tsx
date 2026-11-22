@@ -1,9 +1,10 @@
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigate, Link } from 'react-router-dom'
 import JellyRadio from './components/reactbits/JellyRadio'
 import type { JellyRadioItem } from './components/reactbits/JellyRadio'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Scoop from './pages/Scoop'
+import Privacy from './pages/Privacy'
 
 type NavItem = Extract<JellyRadioItem, { value: string }>
 
@@ -44,8 +45,13 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/scoop" element={<Scoop />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
+      <footer>
+        <span>© 2026 FRANORDE</span>
+        <Link to="/privacy">Privacy</Link>
+      </footer>
     </>
   )
 }
