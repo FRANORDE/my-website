@@ -21,7 +21,7 @@ export default function Scoop() {
       <article>
         <h3>Installation</h3>
         <CommandBlock command={`scoop bucket add ${BUCKET_NAME} ${BUCKET_REPO}`} />
-        <CommandBlock command={`scoop install ${BUCKET_NAME}/<app>`} />
+        <CommandBlock command={`scoop install <app>`} />
       </article>
 
       <article>
