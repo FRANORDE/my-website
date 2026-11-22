@@ -16,7 +16,29 @@
     </nav>
   </header>
   <main>
-    <p>Projects</p>
+    <h2>Projects</h2>
+
+    <article>
+      <h3>WaveR</h3>
+      <p>Local music player.</p>
+      <a id="waver-download" href="https://github.com/FRANORDE/WaveR/releases/latest">Download</a>
+    </article>
   </main>
+
+  <script>
+    async function setLatestDownload(linkId, repo, namePattern) {
+      try {
+        const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
+        if (!res.ok) return; // keep the fallback link
+        const release = await res.json();
+        const asset = release.assets.find((a) => namePattern.test(a.name));
+        if (asset) document.getElementById(linkId).href = asset.browser_download_url;
+      } catch (e) {
+        // network error: keep the fallback link
+      }
+    }
+
+    setLatestDownload("waver-download", "FRANORDE/WaveR", /^WaveR-Setup-.*\.exe$/);
+  </script>
 </body>
 </html>
