@@ -48,6 +48,23 @@ nav a:hover {
   color: var(--accent);
 }
 
+/* Home hero */
+.hero {
+  padding: 1rem 0 2rem;
+  text-align: center;
+}
+
+.hero-wordmark {
+  position: relative;
+  width: 100%;
+  height: clamp(220px, 40vw, 400px);
+}
+
+.hero-tagline {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
 /* Project cards */
 article {
   padding: 1.25rem;
