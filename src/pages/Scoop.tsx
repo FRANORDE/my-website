@@ -6,6 +6,7 @@ const BUCKET_REPO = 'https://github.com/FRANORDE/scoop-bucket'
 export default function Scoop() {
   return (
     <div className="scoop-page">
+      <title>FRANORDE - Scoop</title>
       <h2>Scoop</h2>
       <p className="scoop-intro">
         This is my personal Scoop bucket with my Windows apps. Add the bucket
