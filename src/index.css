@@ -1,0 +1,82 @@
+/* Theme colors: change these to restyle the whole site */
+:root {
+  --bg: #0f1115;
+  --surface: #181b22;
+  --border: #272b35;
+  --text: #e6e8ee;
+  --muted: #9aa1b2;
+  --accent: #7c9cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 800px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Project cards */
+article {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+article h3 {
+  margin: 0 0 0.25rem;
+}
+
+article p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+/* Download button inside a card */
+article a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+article a:hover {
+  filter: brightness(1.1);
+}
