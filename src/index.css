@@ -25,8 +25,10 @@ body {
 /* Header and navigation */
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0.75rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
@@ -36,16 +38,6 @@ header h1 {
   margin: 0;
   font-size: 1.5rem;
   letter-spacing: 0.08em;
-}
-
-nav a {
-  margin-left: 1.25rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--accent);
 }
 
 /* Home hero */
@@ -89,5 +81,74 @@ article p {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem;
+}
+
+/* Scoop page */
+.scoop-page > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.scoop-intro {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+.scoop-page a {
+  color: var(--accent);
+}
+
+.scoop-page a:hover {
+  text-decoration: underline;
+}
+
+.scoop-page > article {
+  margin-bottom: 1.5rem;
+}
+
+.scoop-page article h3 {
+  margin-bottom: 0.75rem;
+}
+
+.scoop-apps {
+  margin-top: 2rem;
+}
+
+.scoop-apps h2 {
+  margin: 0 0 0.75rem;
+}
+
+/* Command block with copy button */
+.command-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.command-block:last-child {
+  margin-bottom: 0;
+}
+
+.command-block code {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+/* Compact sizing for the SpecularButton used by copy actions */
+.command-block .copy-button {
+  flex: none;
+  min-width: 4.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 

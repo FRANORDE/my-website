@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import SpecularButton from '../components/SpecularButton'
+import SpecularButton from '../components/reactbits/SpecularButton'
 
 type ProjectCardProps = {
   name: string
